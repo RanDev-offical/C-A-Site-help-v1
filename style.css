@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 
 body, a {
     display: flex;
@@ -69,12 +71,12 @@ img{
 }
 
 .content {
-    width: 100%;
+    width: calc(100% - 200px);
 }
 
 /*Новости*/
 .aside {
-    width: 200px;
+    width:200px;
     min-height: 500px;
     background-color: #1d213e;
     display:flex;
@@ -157,8 +159,11 @@ img{
         margin-top:50px;
     }
 
+    /*Новости*/
     .aside{
         scale:1.0;
+        display: flex;
+        
     }
 
     .flex-row{
@@ -175,10 +180,25 @@ img{
         justify-content:start;
     }
 
+    footer>p{
+        margin-left:50%;
+    }
 
+    /*Границы*/
+    header{
+    width: 635px;
+    }
+
+    footer{
+    width: 635px;
+    z-index: -1;
+    }
 }
 
+
+
 @media(max-width: 667px) and (orientation:landscape) {
+
  img{
         display: flex;
         width:30%;
@@ -188,27 +208,49 @@ img{
         margin-top:50px;
  }
 
- .warning{
-    width: 90%;
-    height:165px;
+/*Основной контент*/
+ .content>.warning{
+    z-index: 0;
+    width: 790px;
+    height:265px;
     transform: scale(0.7);
  }
 
  .content{
     display: flex;
     justify-content: start;
-    margin-right:165px;
+    margin-right:170px;
  }
 
  .warning>p{
-       transform:scale(1.0);
-       display: flex;
+       transform:scale(0.9);
+       transform: translateY(-15px);
+       z-index: -1;
+       display: inline-flex;
        align-items: center; 
  }
+
+.warning>h1{
+    transform:scale(0.9);
+}
 
  .aside{
     scale:0.9;
     margin-right:20%;
  }
+
+ details>p{
+    scale:0.9;
+ }
+
+/*Границы*/
+
+header{
+width: 800px;
+}
+
+footer{
+width: 800px;
+}
 
 }
