@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{
+    background-color: #022027;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: px;
+    color:#FFFF;
+    text-shadow:
+    0.5px 1px 0.4px white,
+    0 0 1em white,
+    0 0 0.2em white;
+    scroll-behavior: smooth;
+}
+
+header{
+    min-height: 80px;
+    background-color: #1d213e;
+}
+
+footer{
+    background-color: #1d213e;
+    min-height: 80px;
+    display: flexbox;
+    align-items: end;
+    justify-content:end ;
+    margin-left:0;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+/*Фото*/
+.slider{
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    width: 1200px;
+    margin-left:1200px;
+}
+
+.slider_nav>div{
+    float: left;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    scale: 0.7;
+}
+
+.slider-nav > div a {
+    display: block;
+    cursor: pointer;
+}
+
+.slider-nav > div a.active {
+    border-bottom: 3px solid #000;
+}
+
+
+img{
+    scale: 0.7;
+    width:375px;
+    height:450px;
+}
+
+.bx-wrapper {
+    width: 775px;
+}
+
+/*Персонал*/
+.personal{
+    background-color: #1E213d;
+    width: 220px;
+    height: 230px;
+    display:flexbox;
+    justify-content: end;
+    flex-direction: column;
+    margin-right:65%;
+}
+
+a{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: px;
+    color:#FFFF;
+    text-shadow:
+    0.5px 1px 0.4px white,
+    0 0 1em white,
+    0 0 0.2em white;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+}
