@@ -140,7 +140,7 @@ img{
     transform:scale(1.2);
     margin-left: 250px;
 }
-
+/*Вертикаль*/
 @media(max-width: 375px) and (orientation:portrait) {
     /*Slidebar*/
     .sidebar{
@@ -150,29 +150,54 @@ img{
         position:fixed;
     }
 
+    /*Навигатор+иконки*/
+    nav{
+        scale:0.96;
+    }
+
+    i{
+        display:none;
+    }
+
+    a:active{
+        color:aqua;
+    }
+
+
+
+    /*Лого*/
     img{
         display: flex;
         width:45%;
         height:75%;
-        transform:scale(1.9);
-        margin-left: 135px;
+        transform:scale(1.5);
+        margin-left: 115px;
         margin-top:50px;
     }
 
     /*Новости*/
     .aside{
-        scale:1.0;
+        scale:0.7;
         display: flex;
-        
     }
 
     .flex-row{
     display: flex;
+    align-items: flex-end;
+	justify-content: space-between;
     }
 
+
+    /*Предупреждение*/
     .warning{
         display: flex;
         flex-direction: column;
+        margin-left: 120px;
+        width: unset;
+        z-index: 0;
+        width: 790px;
+        height:265px;
+        transform: scale(0.7);
     }
 
     .content{
@@ -180,30 +205,31 @@ img{
         justify-content:start;
     }
 
-    footer>p{
-        margin-left:50%;
-    }
-
     /*Границы*/
     header{
-    width: 635px;
+    width: 375px;
     }
 
     footer{
-    width: 635px;
+    width: 375px;
     z-index: -1;
+    }
+
+    footer>p{
+        z-index: -1;
+        margin-left:50px;
     }
 }
 
 
-
+/*Горизонтал*/
 @media(max-width: 667px) and (orientation:landscape) {
 
  img{
         display: flex;
         width:30%;
         height:25%;
-        transform:scale(1.4);
+        transform:scale(1.6);
         margin-left: 250px;
         margin-top:50px;
  }
@@ -234,9 +260,15 @@ img{
     transform:scale(0.9);
 }
 
+.warning{
+    margin-left:245px;
+}
+
+
+/*Новости*/
  .aside{
-    scale:0.9;
-    margin-right:20%;
+    scale:0.7;
+    display: flex;
  }
 
  details>p{
@@ -244,13 +276,12 @@ img{
  }
 
 /*Границы*/
-
 header{
-width: 800px;
+width: 667px;
 }
 
 footer{
-width: 800px;
+width: 667px;
 }
 
 }
